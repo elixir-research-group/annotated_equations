@@ -1,0 +1,127 @@
+
+\documentclass[letterpaper,twocolumn,10pt]{article} 
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{annotate-equations}
+\renewcommand{\eqnannotationtext}[1]{#1}
+\renewcommand{\eqnhighlightheight}{}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools, nccmath}
+\usepackage{wrapfig}
+\usepackage{comment}
+% \usepackage{acl}
+
+% Standard package includes
+\usepackage{times}
+% \usepackage{latexsym}
+\usepackage{tcolorbox}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}   % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}
+\usepackage{multirow}       % simple URL typesetting
+\usepackage{booktabs}  
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.     
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{supertabular}
+\usepackage{makecell}
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{tabularx}
+\usepackage{graphicx}
+\graphicspath{ {imgs/} }
+\usepackage{svg}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{amsthm, amsmath}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{colortbl}
+% To generate dummy text
+\usepackage{blindtext}
+
+
+%color
+%\usepackage[dvipsnames]{xcolor}
+% \usepackage{xcolor}
+
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+% declare the path(s) for graphic files
+%\graphicspath{{../Figures/}}
+
+% extensions so you won't have to specify these with
+% every instance of \includegraphics
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+% for custom commands
+\usepackage{xspace}
+
+% table alignment
+\usepackage{array}
+\usepackage{ragged2e}
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+\newcolumntype{X}[1]{>{\RaggedRight\hspace*{0pt}}p{#1}}
+
+% color box
+%\usepackage{tcolorbox}
+
+
+% for tikz
+%\usepackage{tikz}
+%%\usetikzlibrary{trees}
+%\usetikzlibrary{arrows,shapes,positioning,shadows,trees,mindmap}
+%% \usepackage{forest}
+%\usepackage[edges]{forest}
+%\usetikzlibrary{arrows.meta}
+\colorlet{linecol}{black!75}
+\usepackage{xkcdcolors} % xkcd colors
+
+
+% for colorful equation
+%\usepackage{tikz}
+%\usetikzlibrary{backgrounds}
+%\usetikzlibrary{arrows,shapes}
+%\usetikzlibrary{tikzmark}
+%\usetikzlibrary{calc}
+%% Commands for Highlighting text -- non tikz method
+%\newcommand{\highlight}[2]{\colorbox{#1!17}{$\displaystyle #2$}}
+%%\newcommand{\highlight}[2]{\colorbox{#1!17}{$#2$}}
+%\newcommand{\highlightdark}[2]{\colorbox{#1!47}{$\displaystyle #2$}}
+
+% my custom colors for shading
+\colorlet{mhpurple}{Plum!80}
+
+
+%% Commands for Highlighting text -- non tikz method
+%\renewcommand{\highlight}[2]{\colorbox{#1!17}{#2}}
+%\renewcommand{\highlightdark}[2]{\colorbox{#1!47}{#2}}
+
+% Some math definitions
+\newcommand{\lap}{\mathrm{Lap}}
+\newcommand{\pr}{\mathrm{Pr}}
+
+\newcommand{\Tset}{\mathcal{T}}
+\newcommand{\Dset}{\mathcal{D}}
+\newcommand{\Rbound}{\widetilde{\mathcal{R}}}
+
+\begin{document}
+\begin{equation}
+ \overbrace {\sigma({\Vec{\alpha}}, \eqnmarkbox[OliveGreen]{s}{S}) = \frac{1}{m} \sum_{j=1}^m \sum_{i=1}^n \eqnmarkbox[blue]{alpha}{\alpha_i} \ind(x_i\in \eqnmarkbox[OliveGreen]{s2}{S}) E_{ij}}^{\substack{\text{\sf \footnotesize \textcolor{purple!85}{Loss modelling function;
+	}} \\ \text{\sf \footnotesize \textcolor{purple!85}{Approximating $L(S,\mathcal{V})$
+}} } }
+\end{equation}
+\annotate[yshift=4em,xshift=2ex]{above,left}{s,s2}{\textbf{Subset of k Exemplars ($S\subseteq\mathcal{S}$)}}
+
+\annotate[yshift=-1.5em]{below,right}{alpha}{ith exemplars contribution, low if important exemplar}
+\end{document}
